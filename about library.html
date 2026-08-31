@@ -1,0 +1,902 @@
+<!-- =========================================================
+     ABOUT OUR LIBRARY - PROFESSIONAL KOHA OPAC PAGE
+     ========================================================= -->
+
+<style>
+
+/* =========================================================
+   MAIN ABOUT LIBRARY CONTAINER
+========================================================= */
+
+.about-library {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+.about-library-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-library-title h1 {
+    margin: 0;
+    color: #041c4c;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.about-library-title .title-line {
+    width: 80px;
+    height: 4px;
+    background: #d4a017;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+/* =========================================================
+   OUR LIBRARY - FULL BACKGROUND HERO SECTION
+========================================================= */
+
+.library-introduction {
+
+    width: 100%;
+
+    min-height: 445px;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 70px 8%;
+
+    margin-bottom: 40px;
+
+    overflow: hidden;
+
+    border-radius: 0;
+
+    color: #ffffff;
+
+    background-image:
+
+        linear-gradient(
+            90deg,
+            rgba(4, 18, 55, 0.96) 0%,
+            rgba(4, 18, 55, 0.88) 22%,
+            rgba(4, 18, 55, 0.62) 40%,
+            rgba(4, 18, 55, 0.25) 58%,
+            rgba(4, 18, 55, 0.05) 78%,
+            rgba(4, 18, 55, 0) 100%
+        ),
+
+        url("https://i.postimg.cc/R0vsssBt/AITlibrary.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    box-shadow: none;
+}
+/* =========================================================
+   OUR LIBRARY CONTENT
+========================================================= */
+.library-introduction h2 {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: #ffffff;
+
+    font-size: 36px;
+
+    font-weight: 700;
+
+    margin: 0 0 22px 0;
+
+    text-align: left;
+
+    letter-spacing: 0.5px;
+}
+
+/* GOLD LINE UNDER HEADING */
+.library-introduction h2::after {
+    display: none;
+}
+
+
+/* =========================================================
+   OUR LIBRARY PARAGRAPHS
+========================================================= */
+
+.library-introduction p {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    color: rgba(255,255,255,0.78);
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    text-align: left;
+
+    margin: 0 0 12px 0;
+}
+
+
+/* =========================================================
+   VISION & MISSION
+========================================================= */
+
+.library-info-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.vision-box,
+.mission-box {
+    background: #f4f7fc;
+    border: 1px solid #dce3f1;
+    border-radius: 15px;
+    padding: 28px;
+    box-sizing: border-box;
+}
+
+.vision-box h2,
+.mission-box h2 {
+    color: #041c4c;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.vision-box p,
+.mission-box p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.staff-section {
+    margin-top: 45px;
+}
+
+.staff-section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.staff-section-title h2 {
+    color: #041c4c;
+    font-size: 29px;
+    margin: 0;
+}
+
+.staff-section-title p {
+    color: #666;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   LIBRARIAN CARD
+========================================================= */
+
+.librarian-card {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.librarian-photo {
+    flex: 0 0 190px;
+}
+
+.librarian-photo img {
+    width: 190px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid #f0f2f7;
+}
+
+.librarian-details {
+    flex: 1;
+}
+
+.librarian-details h3 {
+    color: #041c4c;
+    font-size: 25px;
+    margin: 0 0 8px;
+}
+
+.librarian-designation {
+    color: #b8860b;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.librarian-details p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* =========================================================
+   FACULTY / STAFF GRID
+========================================================= */
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.staff-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border: 1px solid #e5e5e5;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.14);
+}
+
+.staff-card img {
+    width: 150px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f0f2f7;
+    margin-bottom: 15px;
+}
+
+.staff-card h3 {
+    color: #041c4c;
+    font-size: 19px;
+    margin: 5px 0 7px;
+}
+
+.staff-card .designation {
+    color: #b8860b;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.staff-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* =========================================================
+   LIBRARY SERVICES
+========================================================= */
+
+.library-services {
+    margin-top: 50px;
+    background: #041c4c;
+    color: #ffffff;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.library-services h2 {
+    text-align: center;
+    font-size: 27px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.service-item {
+    background: rgba(255,255,255,0.10);
+    border-radius: 12px;
+    padding: 18px;
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 16px;
+    margin: 0 0 7px;
+}
+
+.service-item p {
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   CONTACT / CLOSING SECTION
+========================================================= */
+
+.library-contact {
+    margin-top: 40px;
+    background: #f4f7fc;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+}
+
+.library-contact h2 {
+    color: #041c4c;
+    margin-top: 0;
+}
+
+.library-contact p {
+    line-height: 1.7;
+    margin: 5px 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .staff-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .library-introduction {
+        min-height: 520px;
+        padding: 45px 35px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .about-library {
+        padding: 0 12px;
+    }
+
+    .about-library-title h1 {
+        font-size: 27px;
+    }
+
+    @media (max-width: 650px) {
+
+    .library-introduction {
+
+        min-height: 500px;
+
+        padding: 50px 25px;
+
+        justify-content: center;
+
+        border-radius: 0;
+
+        background-position: center;
+    }
+
+    .library-introduction h2 {
+
+        font-size: 28px;
+
+        margin-bottom: 18px;
+
+        text-align: left;
+    }
+
+    .library-introduction p {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        max-width: 100%;
+
+        text-align: left;
+    }   
+    
+    .library-info-box {
+        grid-template-columns: 1fr;
+    }
+
+    .librarian-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .librarian-photo img {
+        width: 160px;
+        height: 190px;
+    }
+
+    .staff-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .staff-section-title h2 {
+        font-size: 25px;
+    }
+}
+
+</style>
+
+
+<!-- =========================================================
+     ABOUT LIBRARY CONTENT
+========================================================= -->
+
+<div class="about-library">
+
+
+    <!-- =====================================================
+         PAGE TITLE
+    ===================================================== -->
+
+    <div class="about-library-title">
+
+        <h1>About Our Library</h1>
+
+        <div class="title-line"></div>
+
+    </div>
+
+
+    <!-- =====================================================
+         OUR LIBRARY
+         BACKGROUND IMAGE + INFORMATION ON TOP
+    ===================================================== -->
+
+    <div class="library-introduction">
+
+        <h2>Our Library</h2>
+
+
+        <p>
+            The Library is an integral part of the academic community,
+            supporting teaching, learning, research and innovation.
+            It provides access to a wide range of print and digital
+            information resources to meet the academic and information
+            needs of students, faculty members, researchers and staff.
+        </p>
+
+
+        <p>
+            Our library provides a welcoming and technology-enabled
+            learning environment where users can discover, access and
+            utilize reliable information resources. The library
+            continuously works towards improving its collections,
+            services and facilities in accordance with the changing
+            requirements of the academic community.
+        </p>
+
+
+        <p>
+            The library collection includes textbooks, reference books,
+            journals, newspapers, e-books, e-journals, databases,
+            institutional resources and other scholarly materials.
+            Through its services and facilities, the library encourages
+            independent learning, research and lifelong learning.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         VISION & MISSION
+    ===================================================== -->
+
+    <div class="library-info-box">
+
+
+        <!-- VISION -->
+
+        <div class="vision-box">
+
+            <h2>Library Vision</h2>
+
+            <p>
+                To develop a modern, user-focused and innovative
+                library that provides equitable access to quality
+                information resources and supports academic excellence,
+                research, knowledge creation and lifelong learning.
+            </p>
+
+        </div>
+
+
+        <!-- MISSION -->
+
+        <div class="mission-box">
+
+            <h2>Library Mission</h2>
+
+            <p>
+                To provide effective information resources, services
+                and learning spaces that support teaching, learning
+                and research. The library is committed to delivering
+                user-oriented services, promoting information literacy
+                and enabling users to access reliable scholarly
+                information through print and digital resources.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         LIBRARIAN
+    ===================================================== -->
+
+    <div class="staff-section">
+
+        <div class="staff-section-title">
+
+            <h2>Our Librarian</h2>
+
+            <p>
+                Library leadership and professional guidance
+            </p>
+
+        </div>
+
+
+        <div class="librarian-card">
+
+
+            <!-- LIBRARIAN PHOTO -->
+
+            <div class="librarian-photo">
+
+                <!-- REPLACE WITH LIBRARIAN PHOTO -->
+
+                <img
+                    src="https://i.postimg.cc/Fs2474QJ/Whats-App-Image-2026-08-31-at-9-38-56-PM.jpg"
+                    alt="Librarian">
+
+            </div>
+
+
+            <!-- LIBRARIAN INFORMATION -->
+
+            <div class="librarian-details">
+
+                <h3>
+                    M. Pashupathi
+                </h3>
+
+                <div class="librarian-designation">
+                    Librarian / Chief Librarian
+                </div>
+
+                <p>
+                    The Librarian provides professional leadership
+                    for the development and delivery of library
+                    resources and services. The library team works
+                    continuously to provide an effective learning
+                    environment and quality information services
+                    for students, faculty and researchers.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         LIBRARY FACULTY / STAFF
+    ===================================================== -->
+
+    <div class="staff-section">
+
+        <div class="staff-section-title">
+
+            <h2>Library Faculty & Staff</h2>
+
+            <p>
+                Our dedicated team supporting library services
+            </p>
+
+        </div>
+
+
+        <div class="staff-grid">
+
+
+            <!-- STAFF 1 -->
+
+            <div class="staff-card">
+
+                <img
+                    src="https://i.postimg.cc/MGG2LK0K/Whats-App-Image-2026-08-31-at-9-41-43-PM.jpg"
+                    alt="Library Staff">
+
+                <h3>
+                    Lokesh M. R.
+                </h3>
+
+                <div class="designation">
+                    Assistant Librarian
+                </div>
+
+                <p>
+                    Library Services & User Support
+                </p>
+
+            </div>
+
+
+            <!-- STAFF 2 -->
+
+            <div class="staff-card">
+
+                <img
+                    src="YOUR-STAFF-IMAGE-2-URL-HERE"
+                    alt="Library Staff">
+
+                <h3>
+                    Staff Member Name
+                </h3>
+
+                <div class="designation">
+                    Library Assistant
+                </div>
+
+                <p>
+                    Circulation & Reference Services
+                </p>
+
+            </div>
+
+
+            <!-- STAFF 3 -->
+
+            <div class="staff-card">
+
+                <img
+                    src="https://i.postimg.cc/xCck9Q2w/Whats-App-Image-2026-08-31-at-9-43-50-PM.jpg"
+                    alt="Library Staff">
+
+                <h3>
+                    M. Pashupathi
+                </h3>
+
+                <div class="designation">
+                    Library Assistant
+                </div>
+
+                <p>
+                    Technical & Library Services
+                </p>
+
+            </div>
+
+
+            <!-- STAFF 4 -->
+
+            <div class="staff-card">
+
+                <img
+                    src="https://i.postimg.cc/SxDHcb0h/Whats-App-Image-2026-08-31-at-9-43-21-PM.jpg"
+                    alt="Library Staff">
+
+                <h3>
+                    Manukumar
+                </h3>
+
+                <div class="designation">
+                    Library Assistant
+                </div>
+
+                <p>
+                    Digital Library Services
+                </p>
+
+            </div>
+
+
+            <!-- STAFF 5 -->
+
+            <div class="staff-card">
+
+                <img
+                    src="YOUR-STAFF-IMAGE-5-URL-HERE"
+                    alt="Library Staff">
+
+                <h3>
+                    Staff Member Name
+                </h3>
+
+                <div class="designation">
+                    Library Assistant
+                </div>
+
+                <p>
+                    Circulation & User Services
+                </p>
+
+            </div>
+
+
+            <!-- STAFF 6 -->
+
+            <div class="staff-card">
+
+                <img
+                    src="YOUR-STAFF-IMAGE-6-URL-HERE"
+                    alt="Library Staff">
+
+                <h3>
+                    Staff Member Name
+                </h3>
+
+                <div class="designation">
+                    Library Assistant
+                </div>
+
+                <p>
+                    Reference & Information Services
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         LIBRARY SERVICES
+    ===================================================== -->
+
+    <div class="library-services">
+
+        <h2>Library Services</h2>
+
+        <div class="services-grid">
+
+
+            <div class="service-item">
+
+                <h3>📚 Circulation</h3>
+
+                <p>
+                    Borrowing and returning of library resources.
+                </p>
+
+            </div>
+
+
+            <div class="service-item">
+
+                <h3>🔎 Reference Service</h3>
+
+                <p>
+                    Assistance in locating reliable information.
+                </p>
+
+            </div>
+
+
+            <div class="service-item">
+
+                <h3>💻 Digital Library</h3>
+
+                <p>
+                    Access to electronic resources and databases.
+                </p>
+
+            </div>
+
+
+            <div class="service-item">
+
+                <h3>📰 Journals & Newspapers</h3>
+
+                <p>
+                    Access to current journals, magazines and newspapers.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CONTACT / CLOSING
+    ===================================================== -->
+
+    <div class="library-contact">
+
+        <h2>Welcome to Our Library</h2>
+
+        <p>
+            <strong>
+                A Gateway to Knowledge, Learning and Research
+            </strong>
+        </p>
+
+        <p>
+            We welcome students, faculty members, researchers
+            and all members of the academic community to make
+            effective use of our library resources and services.
+        </p>
+
+    </div>
+
+
+</div>
+
+
